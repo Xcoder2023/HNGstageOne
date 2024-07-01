@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 data-testid="slackDisplayName">MATHIAS</h1>
+        <img
+          data-testid="slackProfilePicture"
+          src="/images/mathias.jpeg"
+          alt="mathias Profile Picture"
+          width="150"
+          height="150"
+        />
+        <p>Slack Email: <span data-testid="slackEmail">xcoder2023@gmail.com</span></p>
+      </header>
+      <main>
+        <section class="time-info">
+          <p>
+            Current Time in UTC: <span data-testid="currentTimeUTC" id="currentTimeUTC"></span>
+          </p>
+          <p>Current Day of the Week: <span data-testid="currentDay" id="currentDay"></span></p>
+          <p>Current Date: <span data-testid="currentDate" id="currentDate"></span></p>
+        </section>
+        <section class="goals">
+          <h2>My Tech Goals for the Next 2 Years</h2>
+          <ul id="goalsList">
+            <li draggable="true">
+              Master advanced React patterns and state management.
+            </li>
+            <li draggable="true">
+              Contribute to open-source projects regularly.
+            </li>
+            <li draggable="true">
+              Learn and implement full-stack development using Node.js and
+              Express.
+            </li>
+            <li draggable="true">
+              Enhance skills in cloud services, particularly AWS.
+            </li>
+            <li draggable="true">
+              Improve performance optimization techniques in web development.
+            </li>
+          </ul>
+        </section>
+        <section class="links">
+          <h2>Helpful Links</h2>
+          <ul>
+            <li>
+              <a href="https://hng.tech/learn" data-testid="hngLink"
+                >HNG Learn</a
+              >
+            </li>
+            <li>
+              <a href="https://keyword.dog" data-testid="keywordLink"
+                >Keyword Dog</a
+              >
+            </li>
+            <li>
+              <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+                >Scrape Any Web</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

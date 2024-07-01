@@ -1,0 +1,108 @@
+/* styles.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #333;
+}
+
+header img {
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 4px solid #eee;
+}
+
+.time-info, .contact-info, .goals, .links {
+  margin-bottom: 30px;
+}
+
+.time-info p, .contact-info p {
+  font-size: 1.2em;
+}
+
+.goals h2, .links h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.goals ul, .links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.goals ul li, .links ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: move;
+  transition: background 0.3s ease;
+}
+
+.goals ul li:hover {
+  background: #e1e1e1;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  background: #e6f7ff;
+  transition: background 0.3s ease;
+}
+
+.links ul li a:hover {
+  background: #cceeff;
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 2em;
+  }
+
+  header img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .goals h2, .links h2 {
+      font-size: 1.5em;
+  }
+
+  .goals ul li, .links ul li {
+      font-size: 1em;
+  }
+}
